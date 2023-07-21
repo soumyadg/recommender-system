@@ -1,4 +1,4 @@
-# GitHub Project Documentation: Recommender Systems
+# Recommender Systems
 
 ## Project Overview
 
