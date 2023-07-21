@@ -59,7 +59,7 @@ We acknowledge the contributions of the Netflix dataset creator, Anas Mahmood, f
 
 ## 11. License
 
-The project is licensed under [INSERT YOUR LICENSE HERE, e.g., MIT License]. Please refer to the LICENSE file in the GitHub repository for more details.
+The project is licensed under [MIT License]. Please refer to the LICENSE file in the GitHub repository for more details.
 
 ---
 Please note that the actual content and formatting of the documentation will depend on the project's structure and implementation. You can use this template as a starting point and tailor it to suit your project's specific requirements. Additionally, ensure that you have the necessary permissions to use the Netflix dataset and Roberta model, complying with their respective licenses and terms of use.
