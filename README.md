@@ -62,13 +62,9 @@ Recommender systems work by analyzing historical user-item interactions and gene
 
 - Python 3.x
 - pip package manager
-- Virtual environment (optional but recommended)
 
-### 2.2. Installation <a name="installation"></a>
+#### Create a Virtual Environment (Optional but Recommended)
 
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/recommender-systems.git
-   cd recommender-systems
-
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
