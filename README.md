@@ -1,70 +1,65 @@
-# Recommender Systems Documentation
+# GitHub Project Documentation: Recommender Systems
 
-![Recommender Systems](https://your-domain.com/path/to/your/image.png)
+## Project Overview
+
+This GitHub project focuses on building a recommender system using two different approaches: Cosine Similarity and Roberta. The goal of the project is to generate relevant recommendations for movies in the Netflix dataset based on user input or a selected movie. The project utilizes natural language processing (NLP) techniques to create a corpus and then employs the selected methods to find recommendations.
 
 ## Table of Contents
+1. Introduction
+2. Dataset Information
+3. Data Import
+4. Generating the Corpus
+5. Using TF-IDF
+6. Cosine Similarity Approach
+7. Roberta Approach
+8. Conclusion
+9. How to Use the Code
+10. Acknowledgments
+11. License
 
-1. [Introduction](#introduction)
-   - 1.1. [Overview](#overview)
-   - 1.2. [Features](#features)
-   - 1.3. [How Recommender Systems Work](#how-recommender-systems-work)
+## 1. Introduction
 
-2. [Getting Started](#getting-started)
-   - 2.1. [Prerequisites](#prerequisites)
-   - 2.2. [Installation](#installation)
-   - 2.3. [Usage](#usage)
+Recommender systems are widely used in various industries to provide personalized recommendations to users based on their preferences and behavior. In this project, we explore two different approaches to build a recommender system for Netflix movies. The first approach uses the traditional method of cosine similarity, while the second approach leverages the power of Roberta, a state-of-the-art transformer-based NLP model.
 
-3. [Recommender System Algorithms](#recommender-system-algorithms)
-   - 3.1. [Collaborative Filtering](#collaborative-filtering)
-   - 3.2. [Content-Based Filtering](#content-based-filtering)
-   - 3.3. [Matrix Factorization](#matrix-factorization)
-   - 3.4. [Hybrid Approaches](#hybrid-approaches)
-   - 3.5. [Roberta-Based Recommender](#roberta-based-recommender)
+## 2. Dataset Information
 
-4. [Dataset](#dataset)
-   - 4.1. [Data Collection](#data-collection)
-   - 4.2. [Data Preprocessing](#data-preprocessing)
-   - 4.3. [Data Splitting](#data-splitting)
+The data used in this project is collected from the 'Netflix' dataset, available on Kaggle. The dataset contains information about various movies on Netflix, including titles, cast, descriptions, listed genres, and directors. You can access the dataset through the following link: [Netflix Movies Dataset](https://www.kaggle.com/datasets/anasmahmood000/netflix-movies-dataset).
 
-5. [Implementation](#implementation)
-   - 5.1. [Collaborative Filtering Implementation](#collaborative-filtering-implementation)
-   - 5.2. [Content-Based Filtering Implementation](#content-based-filtering-implementation)
-   - 5.3. [Matrix Factorization Implementation](#matrix-factorization-implementation)
-   - 5.4. [Hybrid Recommender Implementation](#hybrid-recommender-implementation)
-   - 5.5. [Roberta-Based Recommender Implementation](#roberta-based-recommender-implementation)
+## 3. Data Import
 
-## 1. Introduction <a name="introduction"></a>
+The first step in the project is to import the Netflix dataset into the system. The dataset contains valuable information that will be utilized to build the recommender system.
 
-### 1.1. Overview <a name="overview"></a>
+## 4. Generating the Corpus
 
-The Recommender Systems project is an open-source implementation of various recommendation algorithms to provide personalized suggestions to users. Recommender systems are widely used in online platforms, such as e-commerce websites, streaming services, social networks, etc., to help users discover relevant items based on their preferences and behavior.
+The corpus used for this project is a concatenated version of the movie's title, cast, description, listed genres, and director's information. By combining these textual features, we create a comprehensive representation of each movie, which is crucial for both the Cosine Similarity and Roberta approaches.
 
-This project aims to make it easier for developers and researchers to understand, implement, and experiment with different recommender algorithms and evaluate their performance on custom datasets.
+## 5. Using TF-IDF
 
-### 1.2. Features <a name="features"></a>
+After generating the corpus, we apply the Term Frequency-Inverse Document Frequency (TF-IDF) technique to convert the textual data into numerical vectors. TF-IDF assigns a weight to each word in the corpus, capturing its importance in the context of the entire dataset.
 
-- Support for multiple recommender system algorithms:
-  - Collaborative Filtering
-  - Content-Based Filtering
-  - Matrix Factorization
-  - Hybrid Approaches combining multiple algorithms
-  - Roberta-Based Recommender
-- Easy-to-use API for training and making recommendations
-- Detailed documentation and examples for quick start
+## 6. Cosine Similarity Approach
 
-### 1.3. How Recommender Systems Work <a name="how-recommender-systems-work"></a>
+In the first approach, we utilize the cosine similarity metric to calculate the similarity between the user-selected movie or input and all the movies in the dataset. The movies with the highest cosine similarity scores are then recommended as they are considered most similar to the user's input.
 
-Recommender systems work by analyzing historical user-item interactions and generating predictions on what items a user might be interested in. There are several approaches for building recommender systems, including Collaborative Filtering, Content-Based Filtering, Matrix Factorization, and Roberta-Based Recommender. The project explores these methods and offers an evaluation of their effectiveness.
+## 7. Roberta Approach
 
-## 2. Getting Started <a name="getting-started"></a>
+The second approach employs the powerful Roberta model, a transformer-based NLP architecture known for its exceptional performance in various NLP tasks. We fine-tune the pre-trained Roberta model on our Netflix movie corpus and use it to generate movie recommendations based on user input.
 
-### 2.1. Prerequisites <a name="prerequisites"></a>
+## 8. Conclusion
 
-- Python 3.x
-- pip package manager
+Upon comparing the results of both approaches, it becomes evident that Roberta outperforms the cosine similarity method. The reasons for this improvement lie in the advanced capabilities of the Roberta model, which can capture complex semantic relationships, contextual information, and latent patterns in the data. Consequently, Roberta provides more accurate and relevant movie recommendations compared to the cosine similarity approach.
 
-#### Create a Virtual Environment (Optional but Recommended)
+## 9. How to Use the Code
 
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+The project's GitHub repository contains the code necessary to run the recommender system using both the cosine similarity and Roberta approaches. Detailed instructions on how to execute the code and generate movie recommendations are provided in the repository's README file.
+
+## 10. Acknowledgments
+
+We acknowledge the contributions of the Netflix dataset creator, Anas Mahmood, for making the data available on Kaggle.
+
+## 11. License
+
+The project is licensed under [INSERT YOUR LICENSE HERE, e.g., MIT License]. Please refer to the LICENSE file in the GitHub repository for more details.
+
+---
+Please note that the actual content and formatting of the documentation will depend on the project's structure and implementation. You can use this template as a starting point and tailor it to suit your project's specific requirements. Additionally, ensure that you have the necessary permissions to use the Netflix dataset and Roberta model, complying with their respective licenses and terms of use.
